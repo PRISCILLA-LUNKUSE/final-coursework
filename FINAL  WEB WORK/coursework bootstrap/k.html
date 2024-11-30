@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Masters Navbar and Form</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom maroon navbar background */
+        .navbar-maroon {
+            background-color: #800000; /* Maroon color */
+        }
+        
+        /* Custom darker grey form background */
+        .form-dark-grey {
+            background-color: #555555; /* Dark grey background */
+            padding: 30px; /* Add padding for spacing */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        /* Align "Forgot Your Password" to the left */
+        .forgot-password-link {
+            text-align: left;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<bodystyle="background-color: rgb(68, 68, 63);>
+
+<!-- Navigation Bar with Maroon Background -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-maroon">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Frontend Masters</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Log in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary text-white" href="#">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<hr color="orange"size=5 width="100%"/>
+<!-- Form with Darker Grey Background -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form class="form-dark-grey">
+                <h3 class="mb-4 text-white">Sign Up</h3>
+                <div class="mb-3">
+                    <label for="name" class="form-label text-white">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label text-white">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label text-white">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Create a password">
+                </div>
+                <!-- Forgot Password Link Aligned Left -->
+                <div class="mb-3 forgot-password-link">
+                    <a href="#">Forgot your password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap 5 JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+</html>
